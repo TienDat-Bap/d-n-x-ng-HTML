@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" /> -->
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span
+                ><a href="signin.html"><img src="./assets/icons/1.svg" /></a
+              ></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span
+                ><a href="cart.html"><img src="./assets/icons/4.svg" /></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--------------------------------- End header ------------------------------------------------------>
+    <section class="banner" style="margin-bottom: 0px; height: 400px">
+      <div class="banner-container">
+        <img src="./assets/icons/banner.svg" alt="" class="banner__img" />
+        <div class="banner-title">
+          <h2 class="banner-title__h2">
+            <img src="./assets/icons/49.svg" alt="" />
+          </h2>
+          <span class="banner-title__span">Home </span>
+          <sub><img src="./assets/icons/25.svg" alt="" /></sub>
+          <span class="banner-title__span">Checkout </span>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------End .banner------------------------------------------------------->
+    <section class="invoiceProduct">
+      <div class="container">
+        <div class="invoice">
+          <div class="invoice-information">
+            <h2>Billing details</h2>
+            <form action="">
+              <div class="invoice-information-firstlast">
+                <div class="">
+                  <label for="FirstName" class="FirstName">First Name</label>
+                  <input
+                    type="text"
+                    id="FirstName"
+                    class="FirstName__input"
+                    required
+                  />
+                </div>
+                <div class="">
+                  <label for="LastName" class="FirstName">Last Name</label>
+                  <input
+                    type="text"
+                    id="LastName"
+                    class="FirstName__input"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="title__Company">
+                <label for="Company" class="Company"
+                  >Company Name (Optional)</label
+                >
+                <input
+                  type="text"
+                  id="Company"
+                  class="Company__input"
+                  required
+                />
+              </div>
+              <div class="title__Company">
+                <label for="Country" class="Company">Country / Region</label>
+                <select id="Country" class="Company__inputs">
+                  <option value="US" class="Company__option">Sri Lanka</option>
+                  <option value="CA" class="Company__option">Canada</option>
+                  <option value="GB" class="Company__option">
+                    United Kingdom
+                  </option>
+                  <option value="JP" class="Company__option">Japan</option>
+                  <!-- Thêm các quốc gia khác nếu cần -->
+                </select>
+              </div>
+              <div class="title__Company">
+                <label for="Street" class="Company">Street address</label>
+                <input
+                  type="text"
+                  id="Street"
+                  class="Company__input"
+                  required
+                />
+              </div>
+              <div class="title__Company">
+                <label for="Town" class="Company">Town / City</label>
+                <input type="text" id="Town" class="Company__input" required />
+              </div>
+              <div class="title__Company">
+                <label for="Province" class="Company">Province</label>
+                <select id="Province" class="Company__inputs">
+                  <option value="WP" class="Company__option">
+                    Western Province
+                  </option>
+                  <option value="AB" class="Company__option">Alberta</option>
+                  <option value="BC" class="Company__option">
+                    British Columbia
+                  </option>
+                  <option value="MB" class="Company__option">Manitoba</option>
+                  <!-- Thêm các quốc gia khác nếu cần -->
+                </select>
+              </div>
+              <div class="title__Company">
+                <label for="ZIP" class="Company">ZIP code</label>
+                <input type="text" id="ZIP" class="Company__input" required />
+              </div>
+              <div class="title__Company">
+                <label for="Phone" class="Company">Phone</label>
+                <input type="text" id="Phone" class="Company__input" required />
+              </div>
+              <div class="title__Company">
+                <label for="Email" class="Company">Email address</label>
+                <input type="text" class="Company__input" id="Email" required />
+              </div>
+              <div class="title__Companys">
+                <input
+                  type="text"
+                  required
+                  class="Company__inputss"
+                  placeholder="Additional information"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="invoice-price">
+            <div class="invoice-price-product">
+              <div class="invoice-price-product-title">
+                <h6 class="invoice-price-product-title__name">Product</h6>
+                <h6 class="invoice-price-product-title__Subtotal">Subtotal</h6>
+              </div>
+              <div class="invoice-price-product-title-Asgaard">
+                <span class="invoice-price-product-title-Asgaard__sofa"
+                  >Asgaard sofa</span
+                >
+                <span class="invoice-price-product-title-Asgaard__sofax">x</span
+                ><span class="invoice-price-product-title-Asgaard__sofa1"
+                  >1</span
+                >
+                <span class="invoice-price-product-title-Asgaard__sofa2"
+                  >25.000.000đ</span
+                >
+              </div>
+              <div class="invoice-price-product-title-Subtotal">
+                <span class="invoice-price-product-title-Subtotal1"
+                  >Subtotal</span
+                >
+                <span class="invoice-price-product-title-Subtotal2"
+                  >25.000.000đ</span
+                >
+              </div>
+
+              <div class="invoice-price-product-title-Total">
+                <span class="invoice-price-product-title-Total2">Total</span>
+                <span class="invoice-price-product-title-Total3"
+                  >250.000.000đ</span
+                >
+              </div>
+            </div>
+            <div class="invoice-price-text">
+              <label class="">
+                <input type="radio" class="gender" value="male" />
+                <span class="Direct">Direct Bank Transfer</span>
+              </label>
+              <p class="p1">
+                Make your payment directly into our bank account. Please use
+                your Order ID as the payment reference. Your order will not be
+                shipped until the funds have cleared in our account.
+              </p>
+              <label>
+                <input type="radio" class="gender" value="male" />
+                <span class="Directs">Direct Bank Transfer</span>
+              </label>
+              <br />
+              <label>
+                <input type="radio" class="gender" value="male" />
+                <span class="Directs">Cash On Delivery</span>
+              </label>
+              <p class="p2">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our <span>privacy policy</span>.
+              </p>
+              <button>Place order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------- invoiceProduct ---------------------------------------------------->
+
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!------------------------------------------------End service-item-------------------------------------------->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!-------------------------------------------------End service-item------------------------------------------->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!-------------------------------------------------End service-item-------------------------------------------->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!----------------------------------------------------End service-item------------------------------------------->
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------------------------End .services-------------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>
